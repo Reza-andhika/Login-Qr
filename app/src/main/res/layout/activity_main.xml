@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_centerHorizontal="true"
+            android:text="Mulai Scan"
+            android:id="@+id/bt_scan"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/bt_scan"
+            android:id="@+id/tv_scanresult_title"
+            android:layout_gravity="center"
+            android:textAppearance="@android:style/TextAppearance.Material.Body1"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hasil Scan : " />
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/bt_scan"
+            android:id="@+id/tv_scanresult"
+            android:layout_gravity="center"
+            android:textAppearance="@android:style/TextAppearance.Material.Body1"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hasil Scan : " />
+        <TextView
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/bt_scan"
+            android:layout_gravity="center"
+            android:textAppearance="@android:style/TextAppearance.Material.Body1"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:text="Username " />
+
+        <TextView
+            android:layout_below="@id/tv_scanresult_title"
+            android:id="@+id/tv_username"
+            android:textColor="@color/colorBlack"
+            android:hint="Username"
+            android:layout_gravity="center"
+            android:textSize="18dp"
+            android:textColorHint="@color/colorBlack"
+            android:textAppearance="@android:style/TextAppearance.Material.Large"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_" />
+
+        <TextView
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/bt_scan"
+            android:layout_gravity="center"
+            android:textAppearance="@android:style/TextAppearance.Material.Body1"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:text="Passsword " />
+
+        <TextView
+            android:layout_below="@id/tv_scanresult_title"
+            android:id="@+id/tv_password"
+            android:textColor="@color/colorBlack"
+            android:hint="Username"
+            android:layout_gravity="center"
+            android:textSize="18dp"
+            android:textColorHint="@color/colorBlack"
+            android:textAppearance="@android:style/TextAppearance.Material.Large"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Login"
+            android:id="@+id/login"/>
+    </LinearLayout>
+</LinearLayout>
